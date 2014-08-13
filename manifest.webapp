@@ -1,0 +1,25 @@
+{
+  "version": "0.37",
+  "name": "Swac loader",
+  "launch_path": "/index.html",
+  "description": "Webaudio loader test app",
+  "type": "privileged",
+  "default_locale": "en",
+  "icons": {
+    "128": "/images/A128.png",
+    "120": "/images/A120.png",
+    "90": "/images/A90.png",
+    "60": "/images/A60.png",
+    "16": "/images/A16.png"
+  },
+  "developer": {
+    "name": "Inferrna",
+    "url": "http://borgu.org"
+  },
+  "permissions": {
+      "systemXHR": {"description":"For access to http://packs.shtooka.net/"},
+      "tcp-socket":{"description":"For requesting dictd servers"}
+  },
+  "installs_allowed_from": ["*"]
+}
+
