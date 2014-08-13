@@ -19,13 +19,13 @@ def info(title):
     print('process id:', os.getpid())
 
 def newclient(ip, surl)
-    c.execute('''INSERT INTO clients VALUES (?, ?, DateTime('now'));''', ip, surl)
+    c.execute('''INSERT INTO clients VALUES (?, ?, DateTime('now'));''', (ip, surl,))
 
 def updateclient(ip)
-    c.execute('''UPDATE clients SET ldate=? WHERE ip=?''', datatime.now().strftime('%Y-%m-%d %H%M%S'), ip1)
+    c.execute('''UPDATE clients SET ldate=DateTime('now') WHERE ip=?''', (ip1,))
 
 def checkclient(ip)
-    c.execute('''select  from clients WHERE ldate <= DateTime('now', '-1200 seconds');''')
+    c.execute('''delete from clients WHERE ldate <= DateTime('now', '-1200 seconds');''')
 
 
 def new_stream(surl, stype, name, client):
