@@ -1,6 +1,6 @@
 {
   "version": "0.37",
-  "name": "Swac loader",
+  "name": "Sound loader",
   "launch_path": "/index.html",
   "description": "Webaudio loader test app",
   "type": "privileged",
